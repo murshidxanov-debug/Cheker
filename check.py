@@ -3,7 +3,7 @@ import os, requests
 TOKEN = os.environ["TG_TOKEN"]
 CHAT_ID = os.environ["TG_CHAT"]
 URL = "https://uzembassyryouji.rsvsys.jp/"
-MARKER = "XXXX"
+MARKER = "一時停止"
 
 html = requests.get(URL, timeout=20).text
 if MARKER not in html:
